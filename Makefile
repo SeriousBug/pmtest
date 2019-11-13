@@ -44,9 +44,9 @@ nvml-example-clean:
 	cd nvml/src/examples/libpmemobj/ && make clean
 
 nvml-exec:
-	@ echo ./data_store $(arg) /mnt/pmem/pmtest 100
-	@ rm -f /mnt/pmem/pmtest
-	@ cd nvml/src/examples/libpmemobj/map/ && ./data_store $(arg) /mnt/pmem/pmtest 100
+	@ echo ./data_store $(arg) /tmp/pmtest 100
+	@ rm -f /tmp/pmtest
+	@ cd nvml/src/examples/libpmemobj/map/ && ./data_store $(arg) /tmp/pmtest 100
 
 nvml-btree:
 	@ ./patch/patch.sh . ./patch/real_bug/pmdk_btree.patch
