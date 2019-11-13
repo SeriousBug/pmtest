@@ -2,8 +2,8 @@ ifndef $(NUM_CORES)
 NUM_CORES	:= 1
 endif
 
-CC			:= -gcc
-CXX			:= -g++-4.8
+CC			:= -cc
+CXX			:= -c++
 CFLAGS		:= -fPIC -std=c11 -DPMTEST_EXCLUDE -DNUM_CORES=$(NUM_CORES)
 CXXFLAGS	:= -std=c++11 -fPIC -DPMTEST_EXCLUDE -DNUM_CORES=$(NUM_CORES) #-pedantic-errors -Wall -Wextra -Werror
 LDFLAGS		:= -L/usr/lib -lstdc++ -lm -pthread #-lbacktrace -ldl
