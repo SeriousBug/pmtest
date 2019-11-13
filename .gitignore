@@ -10,3 +10,5 @@ nvmveri_socket
 Module.symvers
 modules.order
 .vscode
+cmake-build-debug/
+CMakeLists.txt
